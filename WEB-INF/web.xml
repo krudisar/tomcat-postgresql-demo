@@ -1,0 +1,36 @@
+
+<!-- Tomcat version --> 
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+   version="2.4">
+
+   <display-name>Hello, World Application</display-name>
+   <description>
+     Sup?
+   </description>
+ 
+   <servlet>
+     <servlet-name>HelloServlet</servlet-name>
+   </servlet>
+   <servlet-mapping>
+     <servlet-name>HelloServlet</servlet-name>
+     <url-pattern>/hello</url-pattern>
+   </servlet-mapping>
+
+      <!-- place jstl-1.2.jar file to ./WEB-INF/lib folder -->
+      <dependency>
+          <groupId>jstl</groupId>
+          <artifactId>jstl</artifactId>
+          <version>1.2</version>
+      </dependency>
+
+      <!-- place postgresql-42.2.18.jar file to ./WEB-INF/lib folder -->
+      <dependency>
+          <groupId>postgresql</groupId>
+          <artifactId>postgresql</artifactId>
+          <version>42.2.18</version>
+      </dependency>
+
+ </web-app>
